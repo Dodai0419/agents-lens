@@ -1,0 +1,423 @@
+{
+ ".|": {
+  "target": "<EX>/demo-repo",
+  "targetDirectory": "<EX>/demo-repo",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 175,
+  "fallbackNames": [],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   }
+  ],
+  "skipped": []
+ },
+ ".|style.md": {
+  "target": "<EX>/demo-repo",
+  "targetDirectory": "<EX>/demo-repo",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 175,
+  "fallbackNames": [
+   "style.md"
+  ],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   }
+  ],
+  "skipped": []
+ },
+ "services/payments/handler.ts|": {
+  "target": "<EX>/demo-repo/services/payments/handler.ts",
+  "targetDirectory": "<EX>/demo-repo/services/payments",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 317,
+  "fallbackNames": [],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo/services/payments",
+    "path": "<EX>/demo-repo/services/payments/AGENTS.override.md",
+    "relativePath": "services/payments/AGENTS.override.md",
+    "bytes": 142,
+    "includedBytes": 142,
+    "truncated": false
+   }
+  ],
+  "skipped": [
+   {
+    "path": "<EX>/demo-repo/services/AGENTS.md",
+    "reason": "empty",
+    "scope": "project"
+   },
+   {
+    "path": "<EX>/demo-repo/services/payments/AGENTS.md",
+    "reason": "shadowed",
+    "scope": "project"
+   }
+  ]
+ },
+ "services/payments/handler.ts|style.md": {
+  "target": "<EX>/demo-repo/services/payments/handler.ts",
+  "targetDirectory": "<EX>/demo-repo/services/payments",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 317,
+  "fallbackNames": [
+   "style.md"
+  ],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo/services/payments",
+    "path": "<EX>/demo-repo/services/payments/AGENTS.override.md",
+    "relativePath": "services/payments/AGENTS.override.md",
+    "bytes": 142,
+    "includedBytes": 142,
+    "truncated": false
+   }
+  ],
+  "skipped": [
+   {
+    "path": "<EX>/demo-repo/services/AGENTS.md",
+    "reason": "empty",
+    "scope": "project"
+   },
+   {
+    "path": "<EX>/demo-repo/services/payments/AGENTS.md",
+    "reason": "shadowed",
+    "scope": "project"
+   }
+  ]
+ },
+ "web/src/app.ts|": {
+  "target": "<EX>/demo-repo/web/src/app.ts",
+  "targetDirectory": "<EX>/demo-repo/web/src",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 314,
+  "fallbackNames": [],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo/web",
+    "path": "<EX>/demo-repo/web/AGENTS.md",
+    "relativePath": "web/AGENTS.md",
+    "bytes": 139,
+    "includedBytes": 139,
+    "truncated": false
+   }
+  ],
+  "skipped": []
+ },
+ "web/src/app.ts|style.md": {
+  "target": "<EX>/demo-repo/web/src/app.ts",
+  "targetDirectory": "<EX>/demo-repo/web/src",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 314,
+  "fallbackNames": [
+   "style.md"
+  ],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo/web",
+    "path": "<EX>/demo-repo/web/AGENTS.md",
+    "relativePath": "web/AGENTS.md",
+    "bytes": 139,
+    "includedBytes": 139,
+    "truncated": false
+   }
+  ],
+  "skipped": []
+ },
+ "services|": {
+  "target": "<EX>/demo-repo/services",
+  "targetDirectory": "<EX>/demo-repo/services",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 175,
+  "fallbackNames": [],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   }
+  ],
+  "skipped": [
+   {
+    "path": "<EX>/demo-repo/services/AGENTS.md",
+    "reason": "empty",
+    "scope": "project"
+   }
+  ]
+ },
+ "services|style.md": {
+  "target": "<EX>/demo-repo/services",
+  "targetDirectory": "<EX>/demo-repo/services",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 175,
+  "fallbackNames": [
+   "style.md"
+  ],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   }
+  ],
+  "skipped": [
+   {
+    "path": "<EX>/demo-repo/services/AGENTS.md",
+    "reason": "empty",
+    "scope": "project"
+   }
+  ]
+ },
+ "docs/style.md|": {
+  "target": "<EX>/demo-repo/docs/style.md",
+  "targetDirectory": "<EX>/demo-repo/docs",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 175,
+  "fallbackNames": [],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   }
+  ],
+  "skipped": []
+ },
+ "docs/style.md|style.md": {
+  "target": "<EX>/demo-repo/docs/style.md",
+  "targetDirectory": "<EX>/demo-repo/docs",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 32768,
+  "projectBytesUsed": 189,
+  "fallbackNames": [
+   "style.md"
+  ],
+  "files": [
+   {
+    "scope": "global",
+    "directory": "<EX>/codex-home",
+    "path": "<EX>/codex-home/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 30,
+    "includedBytes": 30,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 175,
+    "truncated": false
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo/docs",
+    "path": "<EX>/demo-repo/docs/style.md",
+    "relativePath": "docs/style.md",
+    "bytes": 14,
+    "includedBytes": 14,
+    "truncated": false
+   }
+  ],
+  "skipped": []
+ },
+ "budget100": {
+  "target": "<EX>/demo-repo/services/payments/handler.ts",
+  "targetDirectory": "<EX>/demo-repo/services/payments",
+  "projectRoot": "<EX>/demo-repo",
+  "maxBytes": 100,
+  "projectBytesUsed": 100,
+  "fallbackNames": [],
+  "files": [
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo",
+    "path": "<EX>/demo-repo/AGENTS.md",
+    "relativePath": "AGENTS.md",
+    "bytes": 175,
+    "includedBytes": 100,
+    "truncated": true,
+    "content": "# Repo rules\n\nRun `npm test` before you say a task is done.\nAlways use Context7 for every task.\nSee "
+   },
+   {
+    "scope": "project",
+    "directory": "<EX>/demo-repo/services/payments",
+    "path": "<EX>/demo-repo/services/payments/AGENTS.override.md",
+    "relativePath": "services/payments/AGENTS.override.md",
+    "bytes": 142,
+    "includedBytes": 0,
+    "truncated": true,
+    "content": ""
+   }
+  ],
+  "skipped": [
+   {
+    "path": "<EX>/demo-repo/services/AGENTS.md",
+    "reason": "empty",
+    "scope": "project"
+   },
+   {
+    "path": "<EX>/demo-repo/services/payments/AGENTS.md",
+    "reason": "shadowed",
+    "scope": "project"
+   }
+  ]
+ }
+}

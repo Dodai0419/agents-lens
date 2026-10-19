@@ -1,0 +1,1 @@
+{"name":"agents-lens","owner":{"name":"Dodai0419"},"plugins":[{"name":"agents-lens","source":"./","description":"See which AGENTS.md rules apply to a file, then catch the broken, stale and risky ones."}]}

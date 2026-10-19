@@ -1,0 +1,245 @@
+{
+ "schemaVersion": 2,
+ "target": "<EX>/demo-repo",
+ "summary": {
+  "healthScore": 55,
+  "scanStatus": "complete",
+  "scannedFiles": 8,
+  "genericFiles": 6,
+  "domainExcluded": 1,
+  "manualReview": 1,
+  "oversizedFiles": 0,
+  "skippedSymlinks": 0,
+  "skippedDirectories": 0,
+  "readErrors": 0,
+  "estimatedTokens": 206,
+  "findingCount": 9,
+  "verdicts": {
+   "KEEP": 0,
+   "MERGE": 0,
+   "UPDATE": 5,
+   "DEMOTE": 0,
+   "RETIRE": 1,
+   "TEST": 3
+  }
+ },
+ "files": [
+  {
+   "relativePath": ".agents/skills/broken-skill/SKILL.md",
+   "kind": "skill",
+   "frontmatterStatus": "missing",
+   "lines": 3,
+   "bytes": 53,
+   "estimatedTokens": 14,
+   "hash": "77d76c758fb5d0b303c3b60ea4f3636811518ae7e6039ef4fc18fe453d61fa34",
+   "scope": "manual-review"
+  },
+  {
+   "relativePath": ".agents/skills/medical-notes/SKILL.md",
+   "kind": "skill",
+   "frontmatterStatus": "valid",
+   "lines": 6,
+   "bytes": 117,
+   "estimatedTokens": 30,
+   "hash": "ce99637019c5d4373fc9f1076cd2d3a4b30e2c9a23f3ef7238399a5f6b745fb3",
+   "scope": "domain-excluded"
+  },
+  {
+   "relativePath": ".agents/skills/pdf-helper/SKILL.md",
+   "kind": "skill",
+   "frontmatterStatus": "valid",
+   "lines": 9,
+   "bytes": 144,
+   "estimatedTokens": 36,
+   "hash": "2be5e0fe863f88173a640d8740bb55b85a4bf92657aa319dce8f5453d8ce39c2",
+   "scope": "generic",
+   "bundleHash": "3e9647bcf1614b3c22aeb232869c7959026436efe9d668bddf2abd2124811be2",
+   "bundleFiles": 1,
+   "bundleBytes": 144
+  },
+  {
+   "relativePath": ".agents/skills/pdf-helper-copy/SKILL.md",
+   "kind": "skill",
+   "frontmatterStatus": "valid",
+   "lines": 9,
+   "bytes": 144,
+   "estimatedTokens": 36,
+   "hash": "2be5e0fe863f88173a640d8740bb55b85a4bf92657aa319dce8f5453d8ce39c2",
+   "scope": "generic",
+   "bundleHash": "3e9647bcf1614b3c22aeb232869c7959026436efe9d668bddf2abd2124811be2",
+   "bundleFiles": 1,
+   "bundleBytes": 144
+  },
+  {
+   "relativePath": "AGENTS.md",
+   "kind": "agent-instructions",
+   "frontmatterStatus": "not-applicable",
+   "lines": 6,
+   "bytes": 175,
+   "estimatedTokens": 44,
+   "hash": "2cda807ff69583d3916009eb83aa0fc8c7fa784a929322cc3367d2cf4bee84c2",
+   "scope": "generic"
+  },
+  {
+   "relativePath": "services/AGENTS.md",
+   "kind": "agent-instructions",
+   "frontmatterStatus": "not-applicable",
+   "lines": 2,
+   "bytes": 4,
+   "estimatedTokens": 1,
+   "hash": "2106c36011520fe73876d45bfb9ef8bf7b2e9f4362096a320376d8ee9b27ef12",
+   "scope": "generic"
+  },
+  {
+   "relativePath": "services/payments/AGENTS.md",
+   "kind": "agent-instructions",
+   "frontmatterStatus": "not-applicable",
+   "lines": 2,
+   "bytes": 38,
+   "estimatedTokens": 10,
+   "hash": "c23276f1e6da53b9ab427273e2b810bc3ad3516f9696d7de4450c3e3c2ef9000",
+   "scope": "generic"
+  },
+  {
+   "relativePath": "web/AGENTS.md",
+   "kind": "agent-instructions",
+   "frontmatterStatus": "not-applicable",
+   "lines": 5,
+   "bytes": 139,
+   "estimatedTokens": 35,
+   "hash": "dea73cfc3664365917921c7cf7943576c0fc7502c5553254fb86eefa929cd493",
+   "scope": "generic"
+  }
+ ],
+ "findings": [
+  {
+   "file": "web/AGENTS.md",
+   "line": 4,
+   "verdict": "UPDATE",
+   "severity": "critical",
+   "confidence": "medium",
+   "ruleId": "possible-secret",
+   "title": "Possible plaintext credential",
+   "evidence": "Detected a credential-like structure. The report does not repeat the value and did not test whether it is valid.",
+   "action": "Review manually. If real, rotate it first and remove it from Markdown; if it is an example, replace it with an obvious placeholder.",
+   "data": {},
+   "scope": "generic"
+  },
+  {
+   "file": ".agents/skills/broken-skill/SKILL.md",
+   "line": 1,
+   "verdict": "UPDATE",
+   "severity": "high",
+   "confidence": "high",
+   "ruleId": "invalid-frontmatter",
+   "title": "Skill frontmatter is missing or malformed",
+   "evidence": "Frontmatter status: missing.",
+   "action": "Add parseable YAML frontmatter with non-empty name and description fields.",
+   "data": {
+    "status": "missing"
+   },
+   "scope": "manual-review"
+  },
+  {
+   "file": ".agents/skills/pdf-helper-copy/SKILL.md",
+   "line": 1,
+   "verdict": "RETIRE",
+   "severity": "high",
+   "confidence": "high",
+   "ruleId": "exact-bundle-duplicate-same-name",
+   "title": "Complete, same-name generic Skill duplicate",
+   "evidence": "The entry and complete bundle manifest/hash match inside one scan root; canonical candidate: .agents/skills/pdf-helper/SKILL.md.",
+   "action": "Confirm both discovery paths are in the actual loading scope, then move only the duplicate to a recoverable archive and retain the bundle hash and rollback manifest.",
+   "data": {
+    "canonicalPath": ".agents/skills/pdf-helper/SKILL.md"
+   },
+   "scope": "generic"
+  },
+  {
+   "file": "AGENTS.md",
+   "line": 5,
+   "verdict": "UPDATE",
+   "severity": "high",
+   "confidence": "high",
+   "ruleId": "broken-reference",
+   "title": "Referenced local file does not exist",
+   "evidence": "A local Markdown reference cannot be resolved. The original target is not repeated to avoid leaking path parameters.",
+   "action": "Update or remove the stale reference; do not let an Agent execute the affected workflow until repaired.",
+   "data": {},
+   "scope": "generic"
+  },
+  {
+   "file": "web/AGENTS.md",
+   "line": 3,
+   "verdict": "UPDATE",
+   "severity": "high",
+   "confidence": "high",
+   "ruleId": "stale-absolute-path",
+   "title": "Absolute path is no longer valid",
+   "evidence": "The instruction contains an absolute path that does not exist on the current filesystem.",
+   "action": "Use a project-relative path, Skill-root path, or another currently verifiable location.",
+   "data": {},
+   "scope": "generic"
+  },
+  {
+   "file": ".agents/skills/pdf-helper-copy/SKILL.md",
+   "line": 8,
+   "verdict": "TEST",
+   "severity": "medium",
+   "confidence": "medium",
+   "ruleId": "legacy-reasoning-scaffold",
+   "title": "Possible legacy reasoning scaffold",
+   "evidence": "Found a rule requiring explicit chain-of-thought or a fixed step-by-step reasoning format.",
+   "action": "Run representative A/B tasks with and without the rule; do not remove it from wording alone.",
+   "data": {},
+   "scope": "generic"
+  },
+  {
+   "file": ".agents/skills/pdf-helper/SKILL.md",
+   "line": 8,
+   "verdict": "TEST",
+   "severity": "medium",
+   "confidence": "medium",
+   "ruleId": "legacy-reasoning-scaffold",
+   "title": "Possible legacy reasoning scaffold",
+   "evidence": "Found a rule requiring explicit chain-of-thought or a fixed step-by-step reasoning format.",
+   "action": "Run representative A/B tasks with and without the rule; do not remove it from wording alone.",
+   "data": {},
+   "scope": "generic"
+  },
+  {
+   "file": "AGENTS.md",
+   "line": 4,
+   "verdict": "TEST",
+   "severity": "medium",
+   "confidence": "medium",
+   "ruleId": "unconditional-tooling",
+   "title": "Unconditional tool use may impose a context tax",
+   "evidence": "The rule binds tool use to every or all tasks.",
+   "action": "Use triggers based on version sensitivity, risk, or task type, then compare tool calls and task success.",
+   "data": {},
+   "scope": "generic"
+  },
+  {
+   "file": "AGENTS.md",
+   "line": 4,
+   "verdict": "UPDATE",
+   "severity": "medium",
+   "confidence": "medium",
+   "ruleId": "context7-assumption",
+   "title": "Recheck the Context7 dependency",
+   "evidence": "The instruction references Context7; verify its availability and scope in the current runtime.",
+   "action": "Inspect the current tool list. If unavailable, remove the mandate and consult first-party documentation only when version sensitivity requires it.",
+   "data": {},
+   "scope": "generic"
+  }
+ ],
+ "limitations": [
+  "Static findings do not prove that removing an instruction improves task quality.",
+  "Model and runtime obsolescence requires current first-party capability evidence.",
+  "Domain Skills, safety rules, authorization gates, and project invariants are excluded from automatic retirement.",
+  "RETIRE requires a complete identical Skill bundle, the same generic Skill name, and both discovery paths inside the same scan root.",
+  "No finding authorizes deletion; changes should be archived, reviewed, tested, and reversible."
+ ],
+ "locale": "en"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "agents-lens",
+  "version": "0.1.0",
+  "description": "See which AGENTS.md rules apply to a file, then catch the broken, stale and risky ones.",
+  "license": "MIT",
+  "bin": { "agents-lens": "agents_lens.js" },
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=18" }
+}
